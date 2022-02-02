@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat.ttf");
+}
+@font-face {
+  font-family: 'SharpSans';
+  src: url("fonts/SharpSans.otf");
+}
+@font-face {
+  font-family: 'ProximaVara';
+  src: url("fonts/ProximaVara.woff2");
+}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+.button-container {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.nebula-button {
+  background: #fff;
+  border: 4px solid #ec8a99;
+  border-radius: none;
+  color: #000;
+  font-family: SharpSans;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 24px;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+}
+.nebula-button:hover,
+.nebula-button:focus {
+  background: #ec8a99;
+  color: #fff;
+}
+.nebula-button--small {
+  padding: $button-padding--small;
+}
+.nebula-button--large {
+  padding: $button-padding--large;
+}
+.nebula-button--ghost {
+  background: $button--ghost-background;
+  border: $button--ghost-border;
+  color: $button--ghost-color;
+}
+.nebula-button--ghost:hover,
+.nebula-button--ghost:focus {
+  background: $button--ghost-background--hover;
+  color: $button--ghost-color--hover;
+}
+.nebula-button--flat {
+  background: $button--flat-background;
+  color: $button--flat-color;
+}
+.nebula-button--flat:hover,
+.nebula-button--flat:focus {
+  background: $button--flat-background--hover;
+  color: $button--flat-color--hover;
+}
