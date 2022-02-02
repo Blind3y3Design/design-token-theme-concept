@@ -10,6 +10,10 @@
   font-family: 'ProximaVara';
   src: url("fonts/ProximaVara.woff2");
 }
+@font-face {
+  font-family: 'Agrandir';
+  src: url("fonts/Agrandir.woff");
+}
 section {
   align-items: center;
   display: flex;
@@ -28,7 +32,7 @@ section {
   border: none;
   border-radius: none;
   color: #fff;
-  font-family: sans-serif;
+  font-family: Agrandir;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: inherit;
