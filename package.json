@@ -1,0 +1,18 @@
+{
+  "name": "@blind3y3design/design-token-theme-concept",
+  "version": "0.1.0",
+  "description": "design token theming concept",
+  "scripts": {
+    "build": "stylus -w style.styl -o style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ttps://github.com/Blind3y3Design/design-token-theme-concept.git"
+  },
+  "author": "Adam Sedwick",
+  "license": "MIT",
+  "devDependencies": {
+    "stylint": "^2.0.0",
+    "stylus": "^0.54.8"
+  }
+}

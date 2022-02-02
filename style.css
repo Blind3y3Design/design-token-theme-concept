@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat.ttf");
+}
+@font-face {
+  font-family: 'SharpSans';
+  src: url("fonts/SharpSans.otf");
+}
+@font-face {
+  font-family: 'ProximaVara';
+  src: url("fonts/ProximaVara.woff2");
+}
+:root {
+/* Global properties */
+  --nebula-border-radius: 8px;
+  --nebula-color-platform-white: #fff;
+  --nebula-color-platform-black: #000;
+  --nebula-color-platform-interactive-100: #f0f9ff;
+  --nebula-color-platform-interactive-200: #dbf0ff;
+  --nebula-color-platform-interactive-300: #d1ebff;
+  --nebula-color-platform-interactive-400: #9ed5ff;
+  --nebula-color-platform-interactive-500: #6bbfff;
+  --nebula-color-platform-interactive-600: #38a9ff;
+  --nebula-color-platform-interactive-700: #0593ff;
+  --nebula-color-platform-interactive-800: #0077d1;
+  --nebula-color-platform-interactive-900: #005a9e;
+  --nebula-color-platform-interactive-1000: #003d6b;
+  --nebula-color-platform-interactive-1100: #002038;
+  --nebula-space-quarter: 2px;
+  --nebula-space-half: 4px;
+  --nebula-space-1x: 8px;
+  --nebula-space-2x: 16px;
+  --nebula-space-3x: 24px;
+  --nebula-space-4x: 32px;
+  --nebula-space-5x: 40px;
+  --nebula-space-6x: 48px;
+  --nebula-space-7x: 56px;
+  --nebula-space-8x: 64px;
+  --nebula-space-9x: 72px;
+  --nebula-space-10x: 80px;
+  --nebula-font-size-body: 1rem;
+/* Button specific properties */
+  --button-background: var(--nebula-color-platform-interactive-800);
+  --button-background--hover: var(--nebula-color-platform-interactive-900);
+  --button--ghost-background: transparent;
+  --button--ghost-background--hover: var(--nebula-color-platform-interactive-900);
+  --button--flat-background: transparent;
+  --button--flat-background--hover: var(--nebula-color-platform-interactive-200);
+  --button-border: none;
+  --button--ghost-border: 1px solid var(--nebula-color-platform-interactive-800);
+  --button-border-radius: var(--nebula-border-radius);
+  --button-color: var(--nebula-color-platform-white);
+  --button-color--hover: var(--nebula-color-platform-white);
+  --button--ghost-color: var(--nebula-color-platform-interactive-800);
+  --button--ghost-color--hover: var(--nebula-color-platform-white);
+  --button--flat-color: var(--nebula-color-platform-interactive-800);
+  --button--flat-color--hover: var(--nebula-color-platform-interactive-800);
+  --button-font-family: ProximaVara;
+  --button-font-size: var(--nebula-font-size-body);
+  --button-font-weight: 700;
+  --button-padding: 12px var(--nebula-space-2x);
+  --button-padding--small: var(--nebula-space-1x) var(--nebula-space-3x);
+  --button-padding--large: var(--nebula-space-2x) var(--nebula-space-3x);
+}
+.mystery-science {
+/* Button specific properties */
+  --button-background: var(--nebula-color-platform-black);
+  --button-background--hover: rgba(0,0,0,0.6);
+  --button--ghost-background: transparent;
+  --button--ghost-background--hover: rgba(0,0,0,0.2);
+  --button-border: none;
+  --button--ghost-border: 4px solid var(--nebula-color-platform-black);
+  --button-border-radius: none;
+  --button-color: var(--nebula-color-platform-white);
+  --button-color--hover: var(--nebula-color-platform-white);
+  --button--ghost-color: var(--nebula-color-platform-black);
+  --button--ghost-color--hover: var(--nebula-color-platform-black);
+  --button-font-family: sans-serif;
+  --button-font-size: var(--nebula-font-size-body);
+  --button-font-weight: 700;
+  --button-padding: var(--nebula-space-1x) var(--nebula-space-3x);
+}
+.operation-prevention {
+/* Button specific properties */
+  --button-background: #cd1131;
+  --button-background--hover: var(--nebula-color-platform-white);
+  --button-border: 4px solid #cd1131;
+  --button-border-radius: none;
+  --button-color: var(--nebula-color-platform-white);
+  --button-color--hover: #cd1131;
+  --button-font-family: Montserrat;
+  --button-font-size: var(--nebula-font-size-body);
+  --button-font-weight: 400;
+  --button-text-transform: uppercase;
+  --button-padding: var(--nebula-space-2x) var(--nebula-space-3x);
+}
+.reach-sky {
+/* Button specific properties */
+  --button-background: var(--nebula-color-platform-white);
+  --button-background--hover: #ec8a99;
+  --button-border: 4px solid #ec8a99;
+  --button-border-radius: none;
+  --button-color: var(--nebula-color-platform-black);
+  --button-color--hover: var(--nebula-color-platform-white);
+  --button-font-family: SharpSans;
+  --button-font-size: 18px;
+  --button-font-weight: 700;
+  --button-letter-spacing: 3px;
+  --button-text-transform: uppercase;
+  --button-padding: var(--nebula-space-3x);
+}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--nebula-space-2x);
+  justify-content: center;
+}
+.button-container {
+  align-items: center;
+  display: flex;
+  gap: var(--nebula-space-2x);
+  justify-content: center;
+}
+.nebula-button {
+  background: var(--button-background);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  color: var(--button-color);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  letter-spacing: var(--button-letter-spacing);
+  padding: var(--button-padding);
+  text-transform: var(--button-text-transform);
+  transition: all 0.25s ease-in-out;
+}
+.nebula-button:hover,
+.nebula-button:focus {
+  background: var(--button-background--hover);
+  color: var(--button-color--hover);
+}
+.nebula-button--small {
+  padding: var(--button-padding--small);
+}
+.nebula-button--large {
+  padding: var(--button-padding--large);
+}
+.nebula-button--ghost {
+  background: var(--button--ghost-background);
+  border: var(--button--ghost-border);
+  color: var(--button--ghost-color);
+}
+.nebula-button--ghost:hover,
+.nebula-button--ghost:focus {
+  background: var(--button--ghost-background--hover);
+  color: var(--button--ghost-color--hover);
+}
+.nebula-button--flat {
+  background: var(--button--flat-background);
+  color: var(--button--flat-color);
+}
+.nebula-button--flat:hover,
+.nebula-button--flat:focus {
+  background: var(--button--flat-background--hover);
+  color: var(--button--flat-color--hover);
+}
