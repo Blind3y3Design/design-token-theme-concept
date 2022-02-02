@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "design token theming concept",
   "scripts": {
-    "build": "stylus -w style.styl -o style.css"
+    "build": "stylus -w style.styl -o style.css",
+    "buildDE": "stylus -w styles/discovery.styl -o discovery.css",
+    "buildMystery": "stylus -w styles/mystery.styl -o mystery.css",
+    "buildOperation": "stylus -w styles/operation.styl -o operation.css",
+    "buildReach": "stylus -w styles/reach.styl -o reach.css"
   },
   "repository": {
     "type": "git",
